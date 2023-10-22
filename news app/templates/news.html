@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haberler</title>
+</head>
+<body>
+    <h2>En Onemli Haberler</h2>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <a href="{{ article.url }}"><strong>{{ article.title }}</strong></a>
+                {% if article.description %}
+                    <p>{{ article.description }}</p>
+                {% endif %}
+                {% if article.urlToImage %}
+                    <img src="{{ article.urlToImage }}" style="max-width: 200px; max-height: 200px;">
+                {% endif %}
+                <hr>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

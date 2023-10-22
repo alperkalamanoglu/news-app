@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haber Uygulamasi</title>
+</head>
+<body>
+    <h2>Kategori Seçin:</h2>
+    <form method="POST">
+        <select name="category">
+            <option value="business">İş</option>
+            <option value="entertainment">Eğlence</option>
+            <option value="health">Sağlik</option>
+            <option value="science">Bilim</option>
+            <option value="sports">Spor</option>
+            <option value="technology">Teknoloji</option>
+        </select>
+        <h2>Tarih Filtresi:</h2>
+        <select name="date_filter">
+            <option value="">Tarih Filtresi Yok</option>
+            <option value="1hour">Son 1 Saat</option>
+            <option value="1day">Son 1 Gün</option>
+            <option value="1week">Son 1 Hafta</option>
+        </select>
+        <h3>Haberleri Ara:</h3>
+        <input type="text" name="q" placeholder="Anahtar Kelime">
+        <input type="submit" value="Haberleri Getir">
+    </form>
+</body>
+</html>
